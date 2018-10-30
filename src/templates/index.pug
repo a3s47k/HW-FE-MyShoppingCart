@@ -8,10 +8,30 @@ block variables
 block body
 	section.home
 		.container
-			.row
-				.col.p-4
-					.jumbotron.text-center
-						h1.hidden-md-up.display-4 Awesome Bootstrap Sites!
-						h2.hidden-md-up Dễ dàng triển khai và sử dụng
-						p.lead Bộ công cụ phát triển web vô cùng mạnh mẽ dựa trên nền tảng Bootstrap.
+			p 
+			label Price
+			p 
+				
+				input#ori(type="text" value=1000)
+			p 
+				label Unit
+			p
+				input#unit(type="number" min=1 max=99 value=1)
+			p 
+				label Shipping
+			p
+				select#opt(name="")
+					option(value="1") Free 
+					option(value="2") Faster
+					option(value="3") Amazon Prime
+					option(value="4") In 2 hours
+			p 
+				label Discount code
+			p
+				input#discount(type="text")
+			
+			p Total 
+			p#total
+
+
 
